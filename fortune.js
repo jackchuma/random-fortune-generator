@@ -5,3 +5,9 @@ const messageComponents = {
     residence: ['apartment', 'condo', 'house']
 }
 
+//Function to generate a random number between 0 and "num"
+//Input will be length of array
+function generateRandomNumber(num) {
+    return Math.floor(Math.random() * num);
+}
+
