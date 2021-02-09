@@ -1,10 +1,10 @@
 //Create an object to store possible outputs for each category of the fortune
 const messageComponents = {
-    occupations: ['nurse', 'engineer', 'teacher'],
-    city: ['Boston, MA', 'New York, NY', 'Los Angeles, CA'],
-    residenceType: ['apartment', 'condo', 'house'],
-    cars: ['Honda', 'Chevy', 'Ford'],
-    dogs: ['Samoyed', 'Golden Retriever', 'German Shepard']
+    occupations: ['nurse', 'engineer', 'teacher', 'architect', 'accountant', 'mechanic', 'pharmacist', 'aerospace engineer', 'electrician', 'firefighter', 'police officer', 'bartender', 'waiter', 'cashier', 'technician', 'agricultural engineer', 'farmer', 'barber', 'software engineer', 'doctor', 'lawyer', 'CEO of a major company', 'carpenter'],
+    city: ['Boston, MA', 'New York, NY', 'Los Angeles, CA', 'Washington, D.C.', 'San Francisco, CA', 'Chicago, IL', 'Austin, TX', 'Seattle, WA', 'Houston, TX', 'San Jose, CA', 'San Antonio, TX', 'Denver, CO', 'Philadelphia, PA', 'San Diego, CA', 'Atlanta, GA', 'Phoenix, AZ', 'Dallas, TX', 'Detroit, MI', 'Nashville, TN', 'Baltimore, MD', 'Portland, OR'],
+    residenceType: ['apartment', 'condo', 'house', 'mansion', 'duplex', 'mobile home', 'cottage', 'hotel'],
+    cars: ['Honda Civic', 'Chevy Impala', 'Ford Mustang', 'Ford Fusion', 'Chevy Malibu'],
+    dogs: ['Samoyed', 'Golden Retriever', 'German Shepard', 'Chow Chow', 'French Bulldog', 'Pug']
 }
 
 //Function to generate a random number between 0 and "num"
