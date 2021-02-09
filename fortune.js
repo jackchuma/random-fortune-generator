@@ -16,7 +16,18 @@ function generateRandomNumber(num) {
 function pickMessageComponents() {
     let randVals = [];
     for (const [subj, array] of Object.entries(messageComponents)) {
-        randVals.push(generateRandomNumber(array.length));
+        randVals.push(array[generateRandomNumber(array.length)]);
     }
     return randVals;
 }
+
+function fortuneGenerator() {
+    const messagePieces = pickMessageComponents();
+    const s1 = `In 10 years, you will be living in a ${messagePieces[2]} in ${messagePieces[1]} as a ${messagePieces[0]}. `;
+    const s2 = `A few years prior, you decided to treat yourself and upgrade to a brand new ${messagePieces[3]}. `;
+    const s3 = `Little did you know, the best part of your life would come the following year when you added a ${messagePieces[4]} to the family. `;
+    const s4 = 'Seems like you\'re going to turn out ok!';
+    return s1 + s2 + s3 + s4;
+}
+
+console.log(fortuneGenerator());
